@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github PR Image</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+        :root {
+            --text-color: #393939;
+            --muted-color: #606060;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #card {
+            width: 900px;
+            height: 325px;
+            border: 1px solid #cecece;
+            padding: 1.5rem;
+            border-radius: 0.65rem;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        #img-placeholder {
+            width: 128px;
+            height: 128px;
+            background-color: transparent;
+            border-radius: 1rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #title {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            letter-spacing: 0.25rem;
+            font-size: 4rem;
+            font-weight: 900;
+        }
+
+        #title>#owner {
+            font-weight: 100;
+            letter-spacing: normal;
+        }
+
+        #description {
+            font-size: 1.25rem;
+            color: var(--muted-color);
+            margin-bottom: 2.5rem;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-item>h3 {
+            font-size: 1.5rem;
+        }
+
+        .footer-item>p {
+            color: var(--muted-color);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="card">
+        <header id="header">
+            <h1 id="title">
+                <span id="owner">owner/</span><span id="repo">Title here</span>
+            </h1>
+            <div id="img-placeholder" />
+        </header>
+        <p id="description">
+            Description
+        </p>
+        <footer id="footer">
+            <div class="footer-item" data-info="language">
+                <h3>Lang</h3>
+                <p>Language</p>
+            </div>
+
+            <div class="footer-item" data-info="open_issues">
+                <h3>9999</h3>
+                <p>Issues</p>
+            </div>
+
+            <div class="footer-item" data-info="stargazers_count">
+                <h3>9999</h3>
+                <p>Stars</p>
+            </div>
+
+            <div class="footer-item" data-info="forks_count">
+                <h3>9999</h3>
+                <p>Forks</p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
